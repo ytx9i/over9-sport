@@ -92,6 +92,11 @@ CLUSTER_FONTS = [
     # Cruise: calm, light numbers
     ('c_speed', 'BarlowSemiCondensed-Medium.ttf', 150, DIGITS + '-'),
     ('c_val', 'BarlowSemiCondensed-Medium.ttf', 62, DIGITS + '.:-+°'),
+    # OVER 9: the brand mark, the big squared speed and gear (Orbitron Black, SIL OFL), Barlow for the small print
+    ('o9_logo', 'Orbitron[wght].ttf', 64, 'OVER9 ', 0, 'Black'),
+    ('o9_speed', 'Orbitron[wght].ttf', 170, DIGITS + '-', 0, 'Black', {'0': 'O'}),
+    ('o9_gear', 'Orbitron[wght].ttf', 110, 'PRNDSM-' + DIGITS, 0, 'Black', {'0': 'O'}),
+    ('o9_val', 'Orbitron[wght].ttf', 54, DIGITS + '.:-+', 0, 'Bold', {'0': 'O'}),
 ]
 FONTS = {'idrive_hud_widgets': HUD_FONTS, 'cluster_themes': CLUSTER_FONTS}
 PAD = 2

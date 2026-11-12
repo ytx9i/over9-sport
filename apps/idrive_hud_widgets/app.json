@@ -455,7 +455,7 @@
       "key": "units",
       "label": "Units",
       "type": "choice",
-      "default": "us",
+      "default": "metric",
       "options": [
         [
           "us",
@@ -471,7 +471,7 @@
       "key": "clock",
       "label": "Clock",
       "type": "choice",
-      "default": "12h",
+      "default": "24h",
       "options": [
         [
           "12h",
@@ -487,7 +487,7 @@
       "key": "timeZone",
       "label": "Time zone (clock)",
       "type": "number",
-      "default": -9999,
+      "default": 180,
       "steps": [
         -9999,
         -720,
@@ -837,10 +837,10 @@
     "statusName": "HUD",
     "socketPath": "/dev/shm/cluster-render/render.sock",
     "location": {
-      "lat": 35.2271,
-      "lon": -80.8431
+      "lat": 37.1436,
+      "lon": 42.6827
     },
-    "utcOffsetMinutes": null,
+    "utcOffsetMinutes": 180,
     "_comment": "socketPath: cluster-render's documented default. location: where the Auto theme works out sunrise and sunset (Charlotte, NC). utcOffsetMinutes: leave null to use the head unit's own time zone; set it (e.g. -300 for EST) only if the HUD clock shows the wrong hour on the car. tankLitres: the fuel gauge's full mark (the car sends litres, not the tank size; a G01 X3 holds 65).",
     "dme": {
       "comment": "Boost from the engine unit (DME, ecu 18) over read-only UDS 0x22, only while the sport display sends no boost and a boost readout is shown. Absolute kPa, the outside air pressure (baro) is subtracted. Candidates tried in order, the first plausible one wins. From cauliflowermossgrape's car_vitals (MIT). Intake air temperature the same way (config.dme.intake, every 2 s, only while an intake readout shows); candidates from cruzen991/Cluster's signal table (MIT), unverified on this car.",

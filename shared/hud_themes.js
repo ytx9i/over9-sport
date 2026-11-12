@@ -161,6 +161,17 @@ const THEMES = {
         ink: [12, 12, 14, 255], accent: [0, 150, 224, 255], well: [0, 0, 0, 255],
         bar1: [0, 150, 224, 255], bar2: [40, 92, 200, 255], warn: [226, 39, 46, 255],
     },
+    // OVER 9 (layout over9.json): the workshop's own look. Black, white squared numbers, OVER 9 orange for the
+    // brand mark, the headers and the rev bar, which turns the shift red at the shift point.
+    over9: {
+        name: 'OVER 9',
+        fg: [244, 246, 250, 255], dim: [150, 156, 166, 255], track: [255, 255, 255, 30], arc: [255, 106, 0, 255],
+        glow: 0, stripe: false,
+        bar: { low: [244, 246, 250], mid: [255, 106, 0], high: [255, 42, 42], midAt: 'shift' },
+        rev: { from: [255, 106, 0], to: [255, 106, 0] },
+        bg: [0, 0, 0, 255], panel: [0, 0, 0, 255], line: [255, 106, 0, 255], head: [255, 106, 0, 255],
+        ink: [12, 12, 14, 255], accent: [255, 106, 0, 255], well: [0, 0, 0, 255],
+    },
 };
 // every theme: the shift-point red, used by "hot" (the gear and SHIFT at the shift point, the rev bar past it)
 Object.keys(THEMES).forEach((k) => { THEMES[k].hot = [255, 42, 42, 255]; });

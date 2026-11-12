@@ -96,11 +96,15 @@
       "key": "hudLayout",
       "label": "Theme (when not by drive mode)",
       "type": "choice",
-      "default": "gt3",
+      "default": "over9",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "over9",
+          "OVER 9"
         ],
         [
           "gt3",
@@ -173,6 +177,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "over9",
+          "OVER 9"
+        ],
+        [
           "gt3",
           "GT3"
         ],
@@ -222,11 +230,15 @@
       "key": "inSport",
       "label": "In Sport",
       "type": "choice",
-      "default": "gt3",
+      "default": "over9",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "over9",
+          "OVER 9"
         ],
         [
           "gt3",
@@ -285,6 +297,10 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "over9",
+          "OVER 9"
+        ],
+        [
           "gt3",
           "GT3"
         ],
@@ -340,7 +356,7 @@
       "key": "units",
       "label": "Units",
       "type": "choice",
-      "default": "us",
+      "default": "metric",
       "options": [
         [
           "us",
@@ -356,7 +372,7 @@
       "key": "clock",
       "label": "Clock",
       "type": "choice",
-      "default": "12h",
+      "default": "24h",
       "options": [
         [
           "12h",
@@ -372,7 +388,7 @@
       "key": "timeZone",
       "label": "Time zone (clock)",
       "type": "number",
-      "default": -9999,
+      "default": 180,
       "steps": [
         -9999,
         -720,
@@ -966,10 +982,10 @@
     "statusName": "Cluster",
     "socketPath": "/dev/shm/cluster-render/render.sock",
     "location": {
-      "lat": 35.2271,
-      "lon": -80.8431
+      "lat": 37.1436,
+      "lon": 42.6827
     },
-    "utcOffsetMinutes": null,
+    "utcOffsetMinutes": 180,
     "waze": {
       "comment": "Show Waze map inside the theme (shared/waze.js): waze-on-cluster's status file (read every second) and its control socket (one short 'start' command, then closed). Paths from waze-on-cluster 0.9.3.",
       "status": "/run/waze-on-cluster/status.json",
