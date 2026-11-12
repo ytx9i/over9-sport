@@ -96,7 +96,9 @@ CLUSTER_FONTS = [
     ('o9_logo', 'Orbitron[wght].ttf', 64, 'OVER9 ', 0, 'Black'),
     ('o9_speed', 'Orbitron[wght].ttf', 170, DIGITS + '-', 0, 'Black', {'0': 'O'}),
     ('o9_gear', 'Orbitron[wght].ttf', 110, 'PRNDSM-' + DIGITS, 0, 'Black', {'0': 'O'}),
-    ('o9_val', 'Orbitron[wght].ttf', 54, DIGITS + '.:-+', 0, 'Bold', {'0': 'O'}),
+    ('o9_val', 'Orbitron[wght].ttf', 54, DIGITS + '.:-+° km', 0, 'Bold', {'0': 'O'}),
+    ('o9_boost', 'Orbitron[wght].ttf', 96, DIGITS + '.-+', 0, 'Black', {'0': 'O'}),
+    ('o9_num', 'Orbitron[wght].ttf', 26, DIGITS + '.', 0, 'Bold', {'0': 'O'}),
 ]
 FONTS = {'idrive_hud_widgets': HUD_FONTS, 'cluster_themes': CLUSTER_FONTS}
 PAD = 2

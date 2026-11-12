@@ -77,6 +77,23 @@ An 80s digital dash: amber seven-segment digits with their unlit 8s showing fain
 
 <p align="center"><img src="../../docs/images/cluster-retro80s.png" width="900" alt="Retro 80s theme"></p>
 
+### OVER 9 Map
+
+The Waze map over the whole cluster, with two small boxes on it: rpm and speed bottom-left, oil and water temperatures and fuel (percent, km left) bottom-right. Turn on "Show Waze map inside the theme".
+
+By default waze-on-cluster draws the map only in the 1088x480 middle. For the whole screen, add one line to `/var/opt/waze-on-cluster/waze-on-cluster.local.conf` on the car and restart it (`systemctl restart waze-on-cluster`):
+
+    map_rect = 144,0,1632,720     # full height, the map's own shape (thin black bars at the sides)
+    map_rect = 0,0,1920,720       # the whole screen, the map stretched about 17 % wider
+
+<p align="center"><img src="../../docs/images/cluster-over9map.png" width="900" alt="OVER 9 Map theme"></p>
+
+### OVER 9 Boost
+
+A big boost gauge in the middle (0-2 bar, needle, the digital boost and the peak), a rev dial on the left with the speed inside, the gear, the clock, fuel with the km left, and oil and water temperatures.
+
+<p align="center"><img src="../../docs/images/cluster-over9boost.png" width="900" alt="OVER 9 Boost theme"></p>
+
 ### Cruise
 
 Calm and quiet for the highway: the speed in soft white, the gear beside it, and one row of trip figures (range, fuel, outside temperature, your average speed this drive and the time). No rev bar, and nothing red until the fuel runs low. The average speed counts only time moving and shows after the first minute of the drive.

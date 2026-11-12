@@ -96,7 +96,7 @@
       "key": "hudLayout",
       "label": "Theme (when not by drive mode)",
       "type": "choice",
-      "default": "over9",
+      "default": "over9map",
       "options": [
         [
           "off",
@@ -105,6 +105,14 @@
         [
           "over9",
           "OVER 9"
+        ],
+        [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
         ],
         [
           "gt3",
@@ -181,6 +189,14 @@
           "OVER 9"
         ],
         [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
+        ],
+        [
           "gt3",
           "GT3"
         ],
@@ -241,6 +257,14 @@
           "OVER 9"
         ],
         [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
+        ],
+        [
           "gt3",
           "GT3"
         ],
@@ -299,6 +323,14 @@
         [
           "over9",
           "OVER 9"
+        ],
+        [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
         ],
         [
           "gt3",
