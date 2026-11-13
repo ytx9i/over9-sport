@@ -3,7 +3,7 @@
   "name": "OVER 9 Map",
   "packWaste": 3,
   "theme": "over9",
-  "_about": "OVER 9 Map: the Waze map over the whole panel, with two small black boxes on it: rpm (number and bar) and speed bottom-left; oil and water temperatures, fuel percent, range left and a fuel bar bottom-right. For the full-screen map set waze-on-cluster's map_rect (see the README, OVER 9 Map); with the stock map_rect the map is the 1088x480 middle. Needs 'Show Waze map inside the theme' on. Without the map the panel stays black. Widget reference: shared/hud.js header.",
+  "_about": "OVER 9 Map: the Waze map over the whole panel, with two small black boxes on it: rpm (number and bar) and speed bottom-left; oil and water temperatures, fuel percent, range left and a fuel bar bottom-right. For the full-screen map set waze-on-cluster's map_rect = 144,0,1632,720 (the window this theme opens) (see the README, OVER 9 Map); with the stock map_rect the map is the 1088x480 middle. Needs 'Show Waze map inside the theme' on. Without the map the panel stays black. Widget reference: shared/hud.js header.",
   "widgets": [
     {
       "id": "bg",
@@ -16,9 +16,9 @@
       "h": 720,
       "color": "bg",
       "hole": [
+        144,
         0,
-        0,
-        1920,
+        1632,
         720
       ],
       "holeWhen": "mapUp",
