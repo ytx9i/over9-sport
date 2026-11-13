@@ -2,7 +2,7 @@
   "id": "idrive_hud_widgets",
   "title": "OVER 9 HUD Widgets",
   "description": "Gear, shift lights, boost, oil, coolant and intake temperatures, a G-meter and trip figures on the windshield HUD, in Classic, M or Night themes",
-  "version": "0.12.5",
+  "version": "0.12.6",
   "vendor": "custom",
   "loggingId": "OAH1",
   "iconGlyph": "HUD",
