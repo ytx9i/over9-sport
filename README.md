@@ -40,6 +40,15 @@ Puts your own readouts on the windshield HUD: gear, shift lights, boost, oil, co
 
 The Store builds each app on the car from this repo. No BMW code is in it. Both apps are tested on a 2020 X3 M40i; each app's page says what has been checked on the car and what is still open. Version history is in [CHANGELOG.md](CHANGELOG.md).
 
+## OVER 9 apps
+
+Also in this source, from [ytx9i/over9-idrive](https://github.com/ytx9i/over9-idrive):
+
+- **OVER 9**: the workshop card on the center screen: name, service, city, phone, and QR codes for WhatsApp, Instagram, TikTok and Snapchat.
+- **OVER 9 Reaction** and **OVER 9 Scenes**.
+
+They build with their own copy of the app kit in `kit-o9/` (`tools/mgu_build.py` picks the kit by app id). Card text and QR codes: edit `INFO` in `tools/gen_assets.py`, then `python3 tools/gen_assets.py`. Fonts in `fonts/`: Cairo and Noto Sans Arabic (SIL OFL 1.1).
+
 ## Credits
 
 - [bimmer-lab/apps](https://github.com/bimmer-lab/apps) (MIT): the original Cluster Themes and HUD Widgets apps this repo is based on.
