@@ -1,6 +1,6 @@
-<h1 align="center">bimmer-lab apps</h1>
+<h1 align="center">OVER 9 Sport</h1>
 
-<p align="center">Apps for BMW iDrive 7 head units (MGU), installed through the community MGU Store.</p>
+<p align="center">Apps for BMW iDrive 7 head units (MGU) by OVER 9, installed through the community MGU Store.</p>
 
 <p align="center"><img src="docs/images/cluster-gt3.gif" width="900" alt="GT3 race dash on the instrument cluster"></p>
 
@@ -8,7 +8,7 @@
 
 <img src="apps/cluster_themes/icon.png" width="72" align="left" alt="Cluster Themes icon">
 
-Redraws the whole instrument cluster in a theme of your choice: a GT3 race dash, an M-style cluster, an M view like the newer M cars, Vector with a music panel, a Sport view, Minimal, Track, Drag with a 0 to 60 timer, Rally with a G-meter, Retro 80s, Cruise, Dyno, a tile dash in BMW M colours, or Ribbon, with holiday editions. Pick the theme on the center screen, or let it follow the SPORT / COMFORT / ECO PRO buttons. [Read more](apps/cluster_themes/README.md)
+Redraws the whole instrument cluster in a theme of your choice: the OVER 9 themes (OVER 9, OVER 9 Boost, OVER 9 Map with a full-screen Waze map), a GT3 race dash, an M-style cluster, an M view like the newer M cars, Vector with a music panel, a Sport view, Minimal, Track, Drag with a 0 to 60 timer, Rally with a G-meter, Retro 80s, Cruise, Dyno, a tile dash in BMW M colours, or Ribbon, with holiday editions. Pick the theme on the center screen, or let it follow the SPORT / COMFORT / ECO PRO buttons. [Read more](apps/cluster_themes/README.md)
 
 <p align="center"><img src="docs/images/cluster-gt3-shift.png" width="900" alt="GT3 theme at the shift point"></p>
 <p align="center"><img src="docs/images/cluster-m.png" width="900" alt="M theme"></p>
@@ -46,7 +46,7 @@ Each app has its own page on the center screen, opened from the apps menu. Pick 
 ## Install
 
 1. Install **cluster-render** first. Both apps draw through it. It comes from the `robertnisipeanu/idrive-apps` Store source. With version 0.5.1 or newer, a cluster theme and a HUD layout can show at the same time.
-2. In the Store, go to **Settings, Add source**, enter **`bimmer-lab/apps`**, and install the apps you want.
+2. In the Store, go to **Settings, Add source**, enter **`ytx9i/over9-sport`**, and install the apps you want.
 3. Open the app from the apps menu on the center screen to pick a theme or layout.
 4. The head unit's clock runs on UTC, so set **Settings, Time zone (clock)** to your zone once (for example US Eastern). Named zones change for daylight saving by themselves.
 
@@ -62,8 +62,18 @@ These are unofficial apps made by hobbyists. They are not made, approved or supp
 - Don't set up or change the apps while driving. Keep your eyes on the road.
 - The apps are provided as is, without any warranty, under the MIT licence. You use them entirely at your own risk.
 
+## OVER 9 apps
+
+Also in this source, from [ytx9i/over9-idrive](https://github.com/ytx9i/over9-idrive):
+
+- **OVER 9**: the workshop card on the center screen: name, service, city, phone, and QR codes for WhatsApp, Instagram, TikTok and Snapchat.
+- **OVER 9 Reaction** and **OVER 9 Scenes**.
+
+They build with their own copy of the app kit in `kit-o9/` (`tools/mgu_build.py` picks the kit by app id). Card text and QR codes: edit `INFO` in `tools/gen_assets.py`, then `python3 tools/gen_assets.py`. Fonts in `fonts/`: Cairo and Noto Sans Arabic (SIL OFL 1.1).
+
 ## Credits
 
+- [bimmer-lab/apps](https://github.com/bimmer-lab/apps) (MIT): the original Cluster Themes and HUD Widgets apps this repo is based on.
 - [cauliflowermossgrape/idrive7-apps](https://github.com/cauliflowermossgrape/idrive7-apps): the MGU App Kit (MIT) these apps are built on, and the Redline app the shift scoring comes from (Redline's HUD by [@biscotit](https://github.com/biscotit)).
 - [robertnisipeanu/idrive-apps](https://github.com/robertnisipeanu/idrive-apps): cluster-render, which draws on the HUD and the cluster.
 - Barlow, Michroma and Orbitron typefaces (SIL Open Font License).

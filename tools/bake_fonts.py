@@ -100,6 +100,13 @@ CLUSTER_FONTS = [
     # Cruise: calm, light numbers
     ('c_speed', 'BarlowSemiCondensed-Medium.ttf', 150, DIGITS + '-'),
     ('c_val', 'BarlowSemiCondensed-Medium.ttf', 62, DIGITS + '.:-+°'),
+    # OVER 9: the brand mark, the big squared speed and gear (Orbitron Black, SIL OFL)
+    ('o9_logo', 'Orbitron[wght].ttf', 64, 'OVER9 ', 0, 'Black'),
+    ('o9_speed', 'Orbitron[wght].ttf', 170, DIGITS + '-', 0, 'Black', {'0': 'O'}),
+    ('o9_gear', 'Orbitron[wght].ttf', 110, 'PRNDSM-' + DIGITS, 0, 'Black', {'0': 'O'}),
+    ('o9_val', 'Orbitron[wght].ttf', 54, DIGITS + '.:-+° km', 0, 'Bold', {'0': 'O'}),
+    ('o9_boost', 'Orbitron[wght].ttf', 96, DIGITS + '.-+', 0, 'Black', {'0': 'O'}),
+    ('o9_num', 'Orbitron[wght].ttf', 26, DIGITS + '.', 0, 'Bold', {'0': 'O'}),
     # Ribbon: Outfit (SIL OFL), thin and calm: the huge speed, the side readouts, small spaced labels
     ('b_speed', 'Outfit[wght].ttf', 250, DIGITS + '-', 0, 'ExtraLight'),
     ('b_val', 'Outfit[wght].ttf', 44, DIGITS + '.:-+°% ' + LOWER + UPPER, 0, 'Light'),

@@ -1,8 +1,8 @@
 {
   "id": "cluster_themes",
-  "title": "Cluster Themes",
+  "title": "OVER 9 Cluster Themes",
   "description": "Redraws the instrument cluster: GT3 race dash, M-style, M view, Vector (with a music panel), Sport, Minimal, Track, Drag, Rally, Retro 80s, Cruise, Dyno (BMW-coloured readout tiles) or Ribbon (with holiday editions), with shift lights, boost, temps, tyres, a G-meter and a 0-60 timer",
-  "version": "0.19.0",
+  "version": "0.19.1",
   "vendor": "custom",
   "loggingId": "OAC1",
   "iconGlyph": "CLU",
@@ -114,11 +114,23 @@
       "key": "hudLayout",
       "label": "Theme (when not by drive mode)",
       "type": "choice",
-      "default": "gt3",
+      "default": "over9map",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "over9",
+          "OVER 9"
+        ],
+        [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
         ],
         [
           "gt3",
@@ -199,6 +211,18 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "over9",
+          "OVER 9"
+        ],
+        [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
+        ],
+        [
           "gt3",
           "GT3"
         ],
@@ -256,11 +280,23 @@
       "key": "inSport",
       "label": "In Sport",
       "type": "choice",
-      "default": "gt3",
+      "default": "over9",
       "options": [
         [
           "off",
           "Off (BMW's own cluster)"
+        ],
+        [
+          "over9",
+          "OVER 9"
+        ],
+        [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
         ],
         [
           "gt3",
@@ -327,6 +363,18 @@
           "Off (BMW's own cluster)"
         ],
         [
+          "over9",
+          "OVER 9"
+        ],
+        [
+          "over9boost",
+          "OVER 9 Boost"
+        ],
+        [
+          "over9map",
+          "OVER 9 Map"
+        ],
+        [
           "gt3",
           "GT3"
         ],
@@ -390,7 +438,7 @@
       "key": "units",
       "label": "Units",
       "type": "choice",
-      "default": "us",
+      "default": "metric",
       "options": [
         [
           "us",
@@ -406,7 +454,7 @@
       "key": "clock",
       "label": "Clock",
       "type": "choice",
-      "default": "12h",
+      "default": "24h",
       "options": [
         [
           "12h",
@@ -422,7 +470,7 @@
       "key": "timeZone",
       "label": "Time zone (clock)",
       "type": "number",
-      "default": -9999,
+      "default": 180,
       "steps": [
         -9999,
         10001,
@@ -1159,7 +1207,7 @@
     "target": "panel",
     "statusName": "Cluster",
     "socketPath": "/dev/shm/cluster-render/render.sock",
-    "utcOffsetMinutes": null,
+    "utcOffsetMinutes": 180,
     "waze": {
       "comment": "Show Waze map inside the theme (shared/waze.js): waze-on-cluster's status file (read every second) and its control socket (one short 'start' command, then closed). Paths from waze-on-cluster 0.9.3.",
       "status": "/run/waze-on-cluster/status.json",
